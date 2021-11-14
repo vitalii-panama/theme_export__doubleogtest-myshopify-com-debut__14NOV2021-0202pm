@@ -1,0 +1,6 @@
+
+{% for product in collections.all.products %}
+  {% for variant in product.variants %}
+    {{variant.title}}
+  {% endfor %}
+{% endfor %}
